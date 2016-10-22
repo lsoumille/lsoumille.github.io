@@ -39,7 +39,9 @@ jQuery(document).ready(function($) {
       {text: "Jenkins", weight: 5},
       {text: "Hadoop", weight: 5},
       {text: "Xcode", weight: 4},
-      {text: "Office", weight: 3}
+      {text: "Office", weight: 3},
+      {text: "Snort", weight: 6},
+      {text: "Metasploit", weight: 7}
       /* ... */
     ];
     $('#programming').jQCloud(words, {
