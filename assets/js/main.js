@@ -3,9 +3,9 @@ jQuery(document).ready(function($) {
 
     /*======= Skillset *=======*/
     var words = [
-      {text: "C", weight: 10},
-      {text: "C++", weight: 9},
-      {text: "Java", weight: 10},
+      {text: "C", weight: 9},
+      {text: "C++", weight: 8},
+      {text: "Java", weight: 9},
       {text: "JEE", weight: 5},
       {text: "C#", weight: 8},
       {text: "Scheme", weight: 4},
@@ -13,9 +13,8 @@ jQuery(document).ready(function($) {
       {text: "Scala", weight: 6},
       {text: "HTML", weight: 6},
       {text: "CSS", weight: 6},
-      {text: "PHP", weight: 8},
+      {text: "PHP", weight: 7},
       {text: "JavaScript", weight: 9},
-      {text: "AngularJS", weight: 5},
       {text: "Bootstrap", weight: 5},
       {text: "ASP.NET", weight: 6},
       {text: "TCP/IP", weight: 4},
@@ -40,12 +39,30 @@ jQuery(document).ready(function($) {
       {text: "Hadoop", weight: 5},
       {text: "Xcode", weight: 4},
       {text: "Office", weight: 3},
-      {text: "Snort", weight: 6},
-      {text: "Metasploit", weight: 7}
+      {text: "Snort", weight: 7},
+      {text: "Metasploit", weight: 8},
+      {text: "Android", weight: 6},
+      {text: "Logstash", weight: 5},
+      {text: "Kibana", weight: 6},
+      {text: "Elasticsearch", weight: 8},
+      {text: "Nessus", weight: 6},
+      {text: "Nmap", weight: 7},
+      {text: "SIEM", weight: 9},
+      {text: "Pare-feux", weight: 8},
+      {text: "OpenFlow", weight: 6},
+      {text: "VPN", weight: 6},
+      {text: "Python", weight: 8},
+      {text: "GNU Radio", weight: 3},
+      {text: "Hadoop", weight: 6},
+      {text: "VMware ESX", weight: 7},
+      {text: "BroIDS", weight: 6},
+      {text: "SmartCard", weight: 5},
+      {text: "Ettercap", weight: 6},
+      {text: "Wireshark", weight: 7}
       /* ... */
     ];
     $('#programming').jQCloud(words, {
-  height: 300,
+  height: 500,
   autoResize: true //Responsive
 });
     $('.level-bar-inner').css('width', '0');

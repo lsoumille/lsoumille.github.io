@@ -577,5 +577,9 @@ img {
     top: 1px;
   }
 }
+
+.summary {
+  text-align: justify;
+}
 /* Large devices (large desktops, 1200px and up) */
 /* Ex-Large devices (large desktops, 1200px and up) */
