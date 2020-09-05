@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
       {text: "Java", weight: 9},
       {text: "JEE", weight: 4},
       {text: "C#", weight: 6},
-      {text: "Scheme", weight: 3},
       {text: "Swift", weight: 7},
       {text: "Scala", weight: 5},
       {text: "HTML", weight: 5},
@@ -59,7 +58,9 @@ jQuery(document).ready(function($) {
       {text: "TheHive", weight: 7},
       {text: "Cortex", weight: 7},
       {text: "Cortex", weight: 9},
-      {text: "Wireshark", weight: 6}
+      {text: "Wireshark", weight: 6},
+      {text: "QRadar", weight: 7},
+      {text: "Defender ATP", weight: 8}
       /* ... */
     ];
     $('#programming').jQCloud(words, {
