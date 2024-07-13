@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(currentIndex);
 });
 
+// JavaScript pour le menu de navigation
 document.addEventListener('DOMContentLoaded', function() {
     // Sélectionner tous les liens du menu
     const menuLinks = document.querySelectorAll('li a[href^="#"]');
@@ -37,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 top: topOffset,
                 behavior: 'smooth'
             });
+
+            document.getElementById("menu-btn").checked = false;
         });
     });
 });

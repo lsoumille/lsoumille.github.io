@@ -168,7 +168,7 @@ nav ul li a:hover {
   
   /* 48em = 768px */
   
-  @media (min-width: 48em) {
+  @media (min-width: 924px) {
     .header li {
       float: left;
     }
@@ -187,11 +187,11 @@ nav ul li a:hover {
   
 
 .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('logo.jpeg') no-repeat center center/cover;
     color: #ffffff;
     text-align: center;
     padding: 100px 20px;
-    position: relative;
+    /* position: relative; */
     top: 50px;
 }
 
@@ -210,17 +210,79 @@ section {
     text-align: center;
 }
 
+.responsive-table {
+    li {
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .table-header {
+      background-color: orange;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: white
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+    }
+    .col-3 {
+      flex-basis: 25%;
+    }
+    .col-4 {
+      flex-basis: 25%;
+    }
+    
+    /* @media all and (max-width: 767px) { */
+    @media all and (max-width: 924px) {
+      .table-header {
+        display: none;
+      }
+      .table-row{
+        
+      }
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .col {
+        display: flex;
+        padding: 10px 0;
+        &:before {
+          color: orange;
+          padding-right: 10px;
+          content: attr(data-label);
+          flex-basis: 50%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
 #schedule, #sponsors, #members, #contact {
     background-color: #f2f2f2;
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #schedule:hover, #sponsors:hover, #members:hover, #contact:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .sponsor, .slide {
