@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpilles Basket Club</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#schedule">Planning</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#members">Membres</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <a href="#home" class="logo">Alpilles Basket Club</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#schedule">Planning</a></li>
+            <li><a href="#members">Membres</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
 
     <section id="home" class="hero">
@@ -38,28 +42,9 @@
     <section id="members">
         <h2>Nos Membres</h2>
         <div class="carousel">
-            <div class="slide"><img src="logo.jpeg" alt="Membre 1"><p>Membre 1</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 2"><p>Membre 2</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
-            <div class="slide"><img src="logo.jpeg" alt="Membre 3"><p>Membre 3</p></div>
+            <div class="slide"><img src="remy.jpeg" alt="Remy"><p>Remy</p></div>
+            <div class="slide"><img src="jeremy.jpg" alt="Jeremy"><p>Jeremy</p></div>
+            <div class="slide"><img src="lucas.png" alt="Lucas"><p>Lucas</p></div>
         </div>
     </section>
 
@@ -91,6 +76,6 @@
         <p>Alpilles Basket Club : Unis par le basket, portés par la passion</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
