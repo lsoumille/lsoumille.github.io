@@ -1,45 +1,28 @@
-// JavaScript pour le carousel des membres
+// Menu burger functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    let currentIndex = 0;
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
-    function showSlide(index) {
-        const slides = carousel.children;
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = i === index ? 'block' : 'none';
-        }
-    }
+    // Toggle menu when burger button is clicked
+    mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % carousel.children.length;
-        showSlide(currentIndex);
-    }
-
-    setInterval(nextSlide, 3000); // Change de slide toutes les 3 secondes
-    showSlide(currentIndex);
-});
-
-// JavaScript pour le menu de navigation
-document.addEventListener('DOMContentLoaded', function() {
-    // Sélectionner tous les liens du menu
-    const menuLinks = document.querySelectorAll('li a[href^="#"]');
-
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault(); // Empêcher le comportement par défaut
-            const targetId = this.getAttribute('href'); // Obtenir l'ID de la section cible
-            const targetSection = document.querySelector(targetId);
-
-            // Calculer la position de la section cible
-            const topOffset = targetSection.offsetTop;
-
-            // Défiler vers la section cible avec une animation
-            window.scrollTo({
-                top: topOffset,
-                behavior: 'smooth'
-            });
-
-            document.getElementById("menu-btn").checked = false;
+    // Close menu when a link is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
         });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!navMenu.contains(event.target) && !mobileMenuToggle.contains(event.target)) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
     });
 });

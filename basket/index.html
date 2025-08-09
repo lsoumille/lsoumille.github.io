@@ -4,87 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpilles Basket Club</title>
+    <link rel="icon" type="image/png" href="real_logo.png">
+    <link rel="shortcut icon" type="image/png" href="real_logo.png">
+    <link rel="apple-touch-icon" href="real_logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <a href="#home" class="logo">Alpilles Basket Club</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#schedule">Planning</a></li>
-            <li><a href="#members">Membres</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+<body id="top">
+    <div class="background-container"></div>
+    <div class="main-container">
+        <header>
+            <a href="#top" class="logo-container">
+                <img src="real_logo.png" alt="Alpilles Basket Club Logo" class="logo-img">
+                <span class="logo-text"><span class="orange-letter">A</span>lpilles <span class="orange-letter">B</span>asket <span class="orange-letter">C</span>lub</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">Notre Club</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="https://www.helloasso.com/associations/alpilles-basket-club" target="_blank" rel="noopener noreferrer">Adhésion</a></li>
+                    <li><a href="https://www.helloasso.com/associations/alpilles-basket-club/formulaires/1" target="_blank" rel="noopener noreferrer">Faire un don</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="logo.jpeg" alt="Alpilles Basket Club Logo">
-            <h1>Unis par le basket, portés par la passion</h1>
-        </div>
-    </section>
+        <main>
+            <section id="hero">
+                <h1>Unis par le basket, portés par la passion</h1>
+            </section>
 
-    <section id="schedule">
-        <h2>Planning des Entraînements</h2>
-        <ul class="responsive-table">
-            <li class="table-header">
-              <div class="col col-1">Equipe</div>
-              <div class="col col-2">Jour</div>
-              <div class="col col-3">Heure</div>
-              <div class="col col-4">Lieu</div>
-            </li>
-            <li class="table-row">
-              <div class="col col-1" data-label="team">Loisir</div>
-              <div class="col col-2" data-label="day">Lundi</div>
-              <div class="col col-3" data-label="hour">20H-21h</div>
-              <div class="col col-4" data-label="Payment Status">Madison Square Garden</div>
-            </li>
-        </ul>
-    </section>
+            <div class="content-wrapper">
+                <section id="about">
+                    <h2>Notre Club</h2>
+                    <p>Le club Alpilles Basket Club a été créé dans le but de favoriser des rencontres basées sur le loisir et le fairplay à travers la pratique du basket-ball. Notre association se veut un espace convivial où chacun peut partager sa passion pour le sport dans un esprit de camaraderie.</p>
+                    <p>Les entrainements ont lieu le lundi et vendredi soirs à partir de 20h15 au gymnase Jean Sidoine de Plan d'Orgon.</p>
+                </section>
 
-    <section id="members">
-        <h2>Nos Membres</h2>
-        <div class="carousel">
-            <div class="slide"><img src="remy.jpeg" alt="Remy"><p>Remy</p></div>
-            <div class="slide"><img src="jeremy.jpg" alt="Jeremy"><p>Jeremy</p></div>
-            <div class="slide"><img src="lucas.png" alt="Lucas"><p>Lucas</p></div>
-        </div>
-    </section>
+                <section id="sponsors">
+                    <h2>Nos Sponsors</h2>
+                    <div class="sponsor-logos">
+                        <div class="sponsor">
+                            <a href="https://www.claas-avignon.fr/" target="_blank" rel="noopener noreferrer">Claas</a>
+                        </div>
+                        <div class="sponsor">
+                            <a href="https://heatraining.fr/" target="_blank" rel="noopener noreferrer">Heat Training</a>
+                        </div>
+                    </div>
+                </section>
 
-    <section id="sponsors">
-        <h2>Nos Sponsors</h2>
-        <div class="sponsor">
-            <img src="logo.jpeg" alt="Sponsor 1">
-            <p>Sponsor 1</p>
-        </div>
-        <div class="sponsor">
-            <img src="logo.jpeg" alt="Sponsor 2">
-            <p>Sponsor 2</p>
-        </div>
-    </section>
+                <section id="contact">
+                    <h2>Contactez-nous</h2>
+                    <p>Pour toute question, n'hésitez pas à nous contacter par email : <a href="mailto:alpillesbc@gmail.com">alpillesbc@gmail.com</a></p>
+                </section>
+            </div>
+        </main>
 
-    <section id="contact">
-        <h2>Contactez-nous</h2>
-        <p>Email : contact@alpillesbasketclub.fr</p>
-        <p>Téléphone : 06 12 34 56 78</p>
-        <p>Adresse : 123 Rue du Basket, Plan d'Orgon</p>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>Alpilles Basket Club : Unis par le basket, portés par la passion</p>
-    </footer>
-
-    <script src="./script.js"></script>
+        <footer>
+            <p>&copy; 2025 Alpilles Basket Club. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
